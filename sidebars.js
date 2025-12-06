@@ -21,51 +21,27 @@ const sidebars = {
       items: [
         'c1-foundations-physical-ai',
         'c2-ros2-architecture',
-        'c3-ros2-actions',
-        'c4-urdf-robot-description',
+        // More chapters coming soon:
+        // 'c3-ros2-actions',
+        // 'c4-urdf-robot-description',
       ],
     },
-    {
-      type: 'category',
-      label: 'Module 2: Simulation Environments',
-      items: [
-        'c5-gazebo-simulation',
-        'c6-isaac-sim-integration',
-        'c7-unity-robotics',
-        'c8-vla-models',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Module 3: Edge Computing',
-      items: [
-        'c9-edge-computing-jetson',
-        'c10-real-time-control',
-        'c11-sensor-fusion',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Module 4: Humanoid Integration',
-      items: [
-        'c12-whole-body-control',
-        'c13-zmp-walking',
-        'c14-humanoid-integration',
-      ],
-    },
-  ],
-
-  // Appendices sidebar
-  appendicesSidebar: [
-    {
-      type: 'category',
-      label: 'Appendices',
-      items: [
-        'a1-hardware-setup',
-        'a2-reference-tables',
-        'g1-glossary',
-      ],
-    },
+    // Additional modules will be added as chapters are completed
+    // {
+    //   type: 'category',
+    //   label: 'Module 2: Simulation Environments',
+    //   items: ['c5-gazebo-simulation', 'c6-isaac-sim-integration', 'c7-unity-robotics', 'c8-vla-models'],
+    // },
+    // {
+    //   type: 'category',
+    //   label: 'Module 3: Edge Computing',
+    //   items: ['c9-edge-computing-jetson', 'c10-real-time-control', 'c11-sensor-fusion'],
+    // },
+    // {
+    //   type: 'category',
+    //   label: 'Module 4: Humanoid Integration',
+    //   items: ['c12-whole-body-control', 'c13-zmp-walking', 'c14-humanoid-integration'],
+    // },
   ],
 };
 
