@@ -21,8 +21,8 @@ const sidebars = {
       items: [
         'c1-foundations-physical-ai',
         'c2-ros2-architecture',
+        'c3-ros2-actions',
         // More chapters coming soon:
-        // 'c3-ros2-actions',
         // 'c4-urdf-robot-description',
       ],
     },
