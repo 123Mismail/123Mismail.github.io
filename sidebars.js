@@ -22,8 +22,7 @@ const sidebars = {
         'c1-foundations-physical-ai',
         'c2-ros2-architecture',
         'c3-ros2-actions',
-        // More chapters coming soon:
-        // 'c4-urdf-robot-description',
+        'c4-urdf-robot-description',
       ],
     },
     // Additional modules will be added as chapters are completed
