@@ -25,12 +25,17 @@ const sidebars = {
         'c4-urdf-robot-description',
       ],
     },
-    // Additional modules will be added as chapters are completed
-    // {
-    //   type: 'category',
-    //   label: 'Module 2: Simulation Environments',
-    //   items: ['c5-gazebo-simulation', 'c6-isaac-sim-integration', 'c7-unity-robotics', 'c8-vla-models'],
-    // },
+    {
+      type: 'category',
+      label: 'Module 2: Simulation Environments',
+      items: [
+        'c5-gazebo-simulation',
+        // More chapters coming soon:
+        // 'c6-isaac-sim-integration',
+        // 'c7-unity-robotics',
+        // 'c8-vla-models',
+      ],
+    },
     // {
     //   type: 'category',
     //   label: 'Module 3: Edge Computing',
