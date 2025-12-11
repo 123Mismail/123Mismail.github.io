@@ -365,13 +365,13 @@ Real-world sensors do not produce perfect measurements. Sensor noise is typicall
 
 3. For an unbiased sensor ($\mu = 0$), the measurement model simplifies to:
    $$
-   z_t = x_t + \mathcal{N}(0, \sigma^2) \tag{1.1}
+   z_t = x_t + \mathcal{N}(0, \sigma^2)
    $$
 
 **Final Equation:**
 
 $$
-z_t = x_t + \epsilon_t, \quad \epsilon_t \sim \mathcal{N}(\mu, \sigma^2) \tag{1.1}
+z_t = x_t + \epsilon_t, \quad \epsilon_t \sim \mathcal{N}(\mu, \sigma^2)
 $$
 
 **Dimensional Analysis:** $[m] = [m] + [m]$ ✓ (units consistent)
@@ -404,7 +404,7 @@ IMUs measure angular velocity, but control algorithms require absolute orientati
 
 3. Substitute values:
    $$
-   q = [0.707, 0, 0, 0.707] \tag{1.2}
+   q = [0.707, 0, 0, 0.707]
    $$
 
 **Final Equation (General Form):**
