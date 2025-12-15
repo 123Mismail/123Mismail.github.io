@@ -27,6 +27,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
-        # Enable these if you're deploying to a user/organization page
-        # publish_branch: main  # Default: gh-pages
-        # force_orphan: true
+        # Use gh-pages branch as this is the standard approach for GitHub Pages
+        # with static site generators like Docusaurus
