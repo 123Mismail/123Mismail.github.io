@@ -183,11 +183,6 @@ const config = {
             ],
           },
         ],
-        logo: {
-          alt: 'Physical AI Logo',
-          src: 'img/logo.svg',
-          href: '/',
-        },
         copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook | Built with Docusaurus`,
       },
       prism: {
