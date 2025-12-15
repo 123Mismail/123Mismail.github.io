@@ -27,5 +27,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
-        # Use gh-pages branch as this is the standard approach for GitHub Pages
-        # with static site generators like Docusaurus
+        publish_branch: gh-pages
+        force_orphan: true
