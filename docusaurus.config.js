@@ -83,7 +83,7 @@ const config = {
         logo: {
           alt: 'Physical AI Logo',
           src: 'img/logo.svg',
-          href: '/chapters/c1-foundations-physical-ai', // Link to first chapter instead of root
+          href: '/', // Link to homepage instead of first chapter
           target: '_self',
         },
         items: [

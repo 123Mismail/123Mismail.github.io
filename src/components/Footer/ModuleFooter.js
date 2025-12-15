@@ -55,16 +55,16 @@ function ModuleFooter() {
         <div className="footer__container" style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem', padding: '2rem 0'}}>
           {footerSections.map((section, index) => (
             <div key={index} className="footer__col" style={{flex: 1, minWidth: '200px'}}>
-              <h4 className="footer__title" style={{color: '#fff', marginBottom: '1rem'}}>{section.title}</h4>
+              <h4 className="footer__title" style={{marginBottom: '1rem'}}>{section.title}</h4>
               <ul className="footer__items" style={{listStyle: 'none', padding: 0}}>
                 {section.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="footer__item" style={{marginBottom: '0.5rem'}}>
                     {item.to ? (
-                      <Link to={item.to} className="footer__link" style={{color: '#ddd', textDecoration: 'none'}}>
+                      <Link to={item.to} className="footer__link" style={{textDecoration: 'none'}}>
                         {item.label}
                       </Link>
                     ) : (
-                      <a href={item.href} className="footer__link" target="_blank" rel="noopener noreferrer" style={{color: '#ddd', textDecoration: 'none'}}>
+                      <a href={item.href} className="footer__link" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
                         {item.label}
                       </a>
                     )}
@@ -74,8 +74,8 @@ function ModuleFooter() {
             </div>
           ))}
         </div>
-        <div className="footer__bottom text--center" style={{marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid #444'}}>
-          <div className="footer__copyright" style={{color: '#aaa'}}>
+        <div className="footer__bottom text--center" style={{marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid'}}>
+          <div className="footer__copyright">
             Copyright © {new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook | Built with Docusaurus
           </div>
         </div>

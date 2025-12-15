@@ -1,0 +1,78 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * locally scoped CSS modules.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.featuresSection {
+  padding: 4rem 0;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.featuresSection h2 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.featuresSection h3 {
+  color: var(--ifm-color-primary-darker);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.module {
+  background-color: var(--ifm-background-surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--ifm-color-emphasis-200);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.module ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.module li {
+  margin-bottom: 0.3rem;
+  color: var(--ifm-font-color-base);
+}
+
+@media screen and (max-width: 996px) {
+  .featuresSection {
+    padding: 2rem 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
