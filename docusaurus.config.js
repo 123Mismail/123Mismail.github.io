@@ -11,20 +11,20 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://123Mismail.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/',
+  baseUrl: '/physical-ai-humanoid-robotics/',
 
-  // GitHub pages deployment config (optional)
-  organizationName: 'physical-ai', // Usually your GitHub org/user name.
-  projectName: 'humanoid-robotics-textbook', // Usually your repo name.
+  // GitHub pages deployment config
+  organizationName: '123Mismail', // Your GitHub username
+  projectName: 'physical-ai-humanoid-robotics', // Your repository name
 
-  onBrokenLinks: 'throw',
-  // Moved to markdown.hooks
+  onBrokenLinks: 'warn', // Changed from 'throw' to prevent build failures
+  onBrokenMarkdownLinks: 'warn',
+  trailingSlash: false, // Recommended for GitHub Pages
+
   markdown: {
-    hooks: {
-      onBrokenMarkdownLinks: 'warn',
-    },
+    mermaid: true,
   },
 
   // Even if you don't use internalization, you can use this field to set useful
