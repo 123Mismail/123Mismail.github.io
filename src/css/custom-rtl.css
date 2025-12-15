@@ -1,0 +1,173 @@
+/* RTL (Right-to-Left) styles for Urdu and other RTL languages */
+
+/* General RTL layout adjustments */
+[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Navbar adjustments for RTL */
+[dir="rtl"] .navbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .navbar__items {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .navbar__item, [dir="rtl"] .navbar__link {
+  margin-left: 0;
+  margin-right: var(--ifm-navbar-item-padding-horizontal);
+}
+
+[dir="rtl"] .navbar__toggle {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .navbar__logo {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+/* Dropdown adjustments */
+[dir="rtl"] .dropdown__menu {
+  text-align: right;
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .dropdown__link {
+  text-align: right;
+}
+
+/* Sidebar adjustments */
+[dir="rtl"] .menu {
+  padding: var(--ifm-menu-link-padding-vertical) 0;
+}
+
+[dir="rtl"] .menu__list-item {
+  margin: 0 0 var(--ifm-menu-link-padding-vertical) 0;
+}
+
+[dir="rtl"] .menu__link {
+  margin: 0 1rem 0 0; /* Only margin on the right side */
+}
+
+[dir="rtl"] .menu__caret {
+  transform: rotate(180deg);
+}
+
+/* Content adjustments */
+[dir="rtl"] .container {
+  text-align: right;
+}
+
+[dir="rtl"] .markdown h1,
+[dir="rtl"] .markdown h2,
+[dir="rtl"] .markdown h3,
+[dir="rtl"] .markdown h4,
+[dir="rtl"] .markdown h5,
+[dir="rtl"] .markdown h6 {
+  text-align: right;
+}
+
+[dir="rtl"] .markdown ul,
+[dir="rtl"] .markdown ol {
+  margin-right: 1.5rem;
+  margin-left: 0;
+  padding: 0;
+}
+
+[dir="rtl"] .markdown li {
+  text-align: right;
+}
+
+/* Button adjustments */
+[dir="rtl"] .button {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Card and grid adjustments */
+[dir="rtl"] .row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .col {
+  text-align: right;
+}
+
+/* Footer adjustments */
+[dir="rtl"] .footer__links {
+  text-align: right;
+}
+
+[dir="rtl"] .footer__item {
+  text-align: right;
+}
+
+[dir="rtl"] .footer__link {
+  text-align: right;
+}
+
+/* Adjust code blocks and preformatted text */
+[dir="rtl"] .prism-code {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: embed;
+}
+
+[dir="rtl"] code {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+/* Search and input adjustments */
+[dir="rtl"] .search-bar input {
+  padding: 8px 40px 8px 12px;
+  background-position: calc(100% - 10px) 50%;
+}
+
+/* Adjust table direction */
+[dir="rtl"] table {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Pagination and navigation */
+[dir="rtl"] .pagination-nav__link {
+  text-align: right;
+}
+
+[dir="rtl"] .pagination-nav__sublabel {
+  transform: rotate(180deg);
+}
+
+/* Blog and content specific RTL styles */
+[dir="rtl"] .blog-post-title,
+[dir="rtl"] .blog-post-info {
+  text-align: right;
+}
+
+[dir="rtl"] .blog-tags {
+  text-align: right;
+}
+
+/* Adjust icon positioning */
+[dir="rtl"] .icon {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Specific adjustments for Docusaurus components */
+[dir="rtl"] .theme-doc-sidebar-menu .menu__list-item-collapsible .menu__link {
+  padding: var(--ifm-menu-link-padding-vertical) var(--ifm-menu-link-padding-horizontal) !important;
+}
+
+[dir="rtl"] .theme-doc-sidebar-menu .menu__list-item-collapsible .menu__caret {
+  margin-left: 0;
+  margin-right: auto;
+  transform: rotate(180deg);
+}

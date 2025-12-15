@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Livre de Physique IA",
+    "description": "The title in the navbar"
+  },
+  "item.label.Chapters": {
+    "message": "Chapitres",
+    "description": "Navbar item with label Chapters"
+  },
+  "sidebar.title.tutorialSidebar": {
+    "message": "Chapitres",
+    "description": "The label for the main sidebar"
+  }
+}

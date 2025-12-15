@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Physik KI Lehrbuch",
+    "description": "The title in the navbar"
+  },
+  "item.label.Chapters": {
+    "message": "Kapitel",
+    "description": "Navbar item with label Chapters"
+  },
+  "sidebar.title.tutorialSidebar": {
+    "message": "Kapitel",
+    "description": "The label for the main sidebar"
+  }
+}

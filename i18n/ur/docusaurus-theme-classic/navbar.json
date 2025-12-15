@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "فزکل اے آئی ٹیکسٹ بک",
+    "description": "The title in the navbar"
+  },
+  "item.label.Chapters": {
+    "message": "ابواب",
+    "description": "Navbar item with label Chapters"
+  },
+  "sidebar.title.tutorialSidebar": {
+    "message": "ابواب",
+    "description": "The label for the main sidebar"
+  }
+}

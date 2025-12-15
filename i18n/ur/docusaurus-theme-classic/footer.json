@@ -1,0 +1,86 @@
+{
+  "link.title.Chapters": {
+    "message": "ابواب",
+    "description": "The title of the first footer column"
+  },
+  "link.title.Advanced Topics": {
+    "message": "اعلیٰ موضوعات",
+    "description": "The title of the second footer column"
+  },
+  "link.title.Control & Integration": {
+    "message": "کنٹرول اور انضمام",
+    "description": "The title of the third footer column"
+  },
+  "link.title.Resources & Support": {
+    "message": "وسائل اور سہولت",
+    "description": "The title of the fourth footer column"
+  },
+  "link.item.label.Chapter 1: Foundations of Physical AI": {
+    "message": "باب 1: جسمانی اے آئی کی بنیادیں",
+    "description": "The label of footer link 1 in the Chapters column"
+  },
+  "link.item.label.Chapter 2: ROS 2 Architecture": {
+    "message": "باب 2: ROS 2 معماری",
+    "description": "The label of footer link 2 in the Chapters column"
+  },
+  "link.item.label.Chapter 3: ROS 2 Actions": {
+    "message": "باب 3: ROS 2 ایکشنز",
+    "description": "The label of footer link 3 in the Chapters column"
+  },
+  "link.item.label.Chapter 4: URDF Robot Description": {
+    "message": "باب 4: URDF روبوٹ کی تفصیل",
+    "description": "The label of footer link 4 in the Chapters column"
+  },
+  "link.item.label.Chapter 5: Gazebo Simulation": {
+    "message": "باب 5: گزیبو سیمولیشن",
+    "description": "The label of footer link 1 in the Advanced Topics column"
+  },
+  "link.item.label.Chapter 6: NVIDIA Isaac Sim": {
+    "message": "باب 6: NVIDIA ایزیک سیم",
+    "description": "The label of footer link 2 in the Advanced Topics column"
+  },
+  "link.item.label.Chapter 7: Unity Simulation": {
+    "message": "باب 7: یونٹی سیمولیشن",
+    "description": "The label of footer link 3 in the Advanced Topics column"
+  },
+  "link.item.label.Chapter 8: Advanced Simulation": {
+    "message": "باب 8: اعلیٰ سیمولیشن",
+    "description": "The label of footer link 4 in the Advanced Topics column"
+  },
+  "link.item.label.Chapter 9: Real-Time Control": {
+    "message": "باب 9: حقیقی وقت کنٹرول",
+    "description": "The label of footer link 1 in the Control & Integration column"
+  },
+  "link.item.label.Chapter 10: Control Algorithms": {
+    "message": "باب 10: کنٹرول الگورتھم",
+    "description": "The label of footer link 2 in the Control & Integration column"
+  },
+  "link.item.label.Chapter 11: Sensor Fusion": {
+    "message": "باب 11: سینسر فیوژن",
+    "description": "The label of footer link 3 in the Control & Integration column"
+  },
+  "link.item.label.Chapter 12-14: Advanced Topics": {
+    "message": "باب 12-14: اعلیٰ موضوعات",
+    "description": "The label of footer link 4 in the Control & Integration column"
+  },
+  "link.item.label.ROS 2 Humble Docs": {
+    "message": "ROS 2 ہمبل ڈاکس",
+    "description": "The label of footer link 1 in the Resources & Support column"
+  },
+  "link.item.label.Gazebo": {
+    "message": "گزیبو",
+    "description": "The label of footer link 2 in the Resources & Support column"
+  },
+  "link.item.label.NVIDIA Isaac Sim": {
+    "message": "NVIDIA ایزیک سیم",
+    "description": "The label of footer link 3 in the Resources & Support column"
+  },
+  "link.item.label.GitHub Repository": {
+    "message": "گٹ ہب ذخیرہ",
+    "description": "The label of footer link 4 in the Resources & Support column"
+  },
+  "copyright": {
+    "message": "کاپی رائٹ © 2025 جسمانی اے آئی اور ہیومنوائڈ روبوٹکس ٹیکسٹ بک | ڈوکوسورس کے ساتھ تیار کردہ",
+    "description": "The footer copyright message"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "link.title.Chapters": {
+    "message": "Chapitres",
+    "description": "The title of the first footer column"
+  },
+  "link.title.Advanced Topics": {
+    "message": "Sujets Avancés",
+    "description": "The title of the second footer column"
+  },
+  "link.title.Control & Integration": {
+    "message": "Contrôle et Intégration",
+    "description": "The title of the third footer column"
+  },
+  "link.title.Resources & Support": {
+    "message": "Ressources et Support",
+    "description": "The title of the fourth footer column"
+  },
+  "link.item.label.Chapter 1: Foundations of Physical AI": {
+    "message": "Chapitre 1 : Fondements de l'IA Physique",
+    "description": "The label of footer link 1 in the Chapters column"
+  },
+  "link.item.label.Chapter 2: ROS 2 Architecture": {
+    "message": "Chapitre 2 : Architecture de ROS 2",
+    "description": "The label of footer link 2 in the Chapters column"
+  },
+  "link.item.label.Chapter 3: ROS 2 Actions": {
+    "message": "Chapitre 3 : Actions de ROS 2",
+    "description": "The label of footer link 3 in the Chapters column"
+  },
+  "link.item.label.Chapter 4: URDF Robot Description": {
+    "message": "Chapitre 4 : Description de Robot URDF",
+    "description": "The label of footer link 4 in the Chapters column"
+  },
+  "link.item.label.Chapter 5: Gazebo Simulation": {
+    "message": "Chapitre 5 : Simulation Gazebo",
+    "description": "The label of footer link 1 in the Advanced Topics column"
+  },
+  "link.item.label.Chapter 6: NVIDIA Isaac Sim": {
+    "message": "Chapitre 6 : NVIDIA Isaac Sim",
+    "description": "The label of footer link 2 in the Advanced Topics column"
+  },
+  "link.item.label.Chapter 7: Unity Simulation": {
+    "message": "Chapitre 7 : Simulation Unity",
+    "description": "The label of footer link 3 in the Advanced Topics column"
+  },
+  "link.item.label.Chapter 8: Advanced Simulation": {
+    "message": "Chapitre 8 : Simulation Avancée",
+    "description": "The label of footer link 4 in the Advanced Topics column"
+  },
+  "link.item.label.Chapter 9: Real-Time Control": {
+    "message": "Chapitre 9 : Contrôle en Temps Réel",
+    "description": "The label of footer link 1 in the Control & Integration column"
+  },
+  "link.item.label.Chapter 10: Control Algorithms": {
+    "message": "Chapitre 10 : Algorithmes de Contrôle",
+    "description": "The label of footer link 2 in the Control & Integration column"
+  },
+  "link.item.label.Chapter 11: Sensor Fusion": {
+    "message": "Chapitre 11 : Fusion de Capteurs",
+    "description": "The label of footer link 3 in the Control & Integration column"
+  },
+  "link.item.label.Chapter 12-14: Advanced Topics": {
+    "message": "Chapitre 12-14 : Sujets Avancés",
+    "description": "The label of footer link 4 in the Control & Integration column"
+  },
+  "link.item.label.ROS 2 Humble Docs": {
+    "message": "Documents ROS 2 Humble",
+    "description": "The label of footer link 1 in the Resources & Support column"
+  },
+  "link.item.label.Gazebo": {
+    "message": "Gazebo",
+    "description": "The label of footer link 2 in the Resources & Support column"
+  },
+  "link.item.label.NVIDIA Isaac Sim": {
+    "message": "NVIDIA Isaac Sim",
+    "description": "The label of footer link 3 in the Resources & Support column"
+  },
+  "link.item.label.GitHub Repository": {
+    "message": "Dépôt GitHub",
+    "description": "The label of footer link 4 in the Resources & Support column"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Livre de Physique IA et Robotique Humaniforme | Créé avec Docusaurus",
+    "description": "The footer copyright message"
+  }
+}

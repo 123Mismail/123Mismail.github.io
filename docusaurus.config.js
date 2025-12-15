@@ -31,11 +31,20 @@ const config = {
   // metadata like html lang.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ur'],
+    locales: ['en', 'ur', 'es', 'fr', 'de'],
     localeConfigs: {
       ur: {
         direction: 'rtl',
         label: 'Urdu',
+      },
+      es: {
+        label: 'Español',
+      },
+      fr: {
+        label: 'Français',
+      },
+      de: {
+        label: 'Deutsch',
       },
     },
   },
@@ -92,6 +101,10 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Chapters',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },
