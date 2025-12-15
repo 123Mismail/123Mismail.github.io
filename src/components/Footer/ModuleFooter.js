@@ -1,57 +1,86 @@
-import React, { useEffect, useState } from 'react';
-import { parseModulesFromSidebar, getLimitedModules } from '@site/src/utils/sidebar-parser';
+import React from 'react';
 import Link from '@docusaurus/Link';
-import Translate, { translate } from '@docusaurus/Translate';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 /**
  * ModuleFooter Component
- * Displays module titles in the footer instead of chapter-level links
- * Reads module structure from sidebar metadata
+ * Advanced 4-column footer layout with organized links
  *
  * Constitution Compliance: Principle VIII - Textbook Delivery Platform Requirements
  * Spec: specs/005-delivery-platform/spec.md (M-05, AC-8.4-A)
  */
 function ModuleFooter() {
-  const [modules, setModules] = useState([]);
-  const { i18n } = useDocusaurusContext();
-
-  useEffect(() => {
-    try {
-      // Parse modules from sidebar configuration
-      const parsedModules = getLimitedModules(3); // Limit to 3 modules as specified
-      setModules(parsedModules);
-    } catch (error) {
-      console.error('Error parsing modules for footer:', error);
-      // Set empty array to prevent rendering issues
-      setModules([]);
+  // Define the advanced footer structure
+  const footerSections = [
+    {
+      title: 'Chapters',
+      items: [
+        { label: 'Chapter 1: Foundations of Physical AI', to: '/chapters/c1-foundations-physical-ai' },
+        { label: 'Chapter 2: ROS 2 Architecture', to: '/chapters/c2-ros2-architecture' },
+        { label: 'Chapter 3: ROS 2 Actions', to: '/chapters/c3-ros2-actions' },
+        { label: 'Chapter 4: URDF Robot Description', to: '/chapters/c4-urdf-robot-description' },
+      ]
+    },
+    {
+      title: 'Advanced Topics',
+      items: [
+        { label: 'Chapter 5: Gazebo Simulation', to: '/chapters/c5-gazebo-simulation' },
+        { label: 'Chapter 6: NVIDIA Isaac Sim', to: '/chapters/c6-isaac-sim' },
+        { label: 'Chapter 7: Unity Simulation', to: '/chapters/c7-unity-simulation' },
+        { label: 'Chapter 8: Advanced Simulation', to: '/chapters/c8-advanced-simulation' },
+      ]
+    },
+    {
+      title: 'Control & Integration',
+      items: [
+        { label: 'Chapter 9: Real-Time Control', to: '/chapters/c9-real-time-control' },
+        { label: 'Chapter 10: Control Algorithms', to: '/chapters/c10-real-time-algorithms' },
+        { label: 'Chapter 11: Sensor Fusion', to: '/chapters/c11-sensor-fusion' },
+        { label: 'Chapter 12-14: Advanced Topics', to: '/chapters/c12-whole-body-control' },
+      ]
+    },
+    {
+      title: 'Resources & Support',
+      items: [
+        { label: 'ROS 2 Humble Docs', href: 'https://docs.ros.org/en/humble/' },
+        { label: 'Gazebo', href: 'https://gazebosim.org/' },
+        { label: 'NVIDIA Isaac Sim', href: 'https://docs.omniverse.nvidia.com/isaacsim/latest/' },
+        { label: 'GitHub Repository', href: 'https://github.com/123Mismail/physical-ai-humanoid-robotics' },
+      ]
     }
-  }, []);
-
-  if (!modules || modules.length === 0) {
-    return null; // Don't render if no modules are available
-  }
+  ];
 
   return (
-    <div className="footer__module-section">
-      <h3 className="footer__title">
-        <Translate id="footer.modulesTitle" description="Footer modules section title">
-          Course Modules
-        </Translate>
-      </h3>
-      <div className="footer__items">
-        {modules.map((module, index) => (
-          <div key={module.id || index} className="footer__item">
-            <Link
-              to={module.firstChapter || '#'}
-              className="footer__link"
-            >
-              {module.title}
-            </Link>
+    <footer className="footer">
+      <div className="container container-fluid">
+        <div className="footer__container" style={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem', padding: '2rem 0'}}>
+          {footerSections.map((section, index) => (
+            <div key={index} className="footer__col" style={{flex: 1, minWidth: '200px'}}>
+              <h4 className="footer__title" style={{color: '#fff', marginBottom: '1rem'}}>{section.title}</h4>
+              <ul className="footer__items" style={{listStyle: 'none', padding: 0}}>
+                {section.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="footer__item" style={{marginBottom: '0.5rem'}}>
+                    {item.to ? (
+                      <Link to={item.to} className="footer__link" style={{color: '#ddd', textDecoration: 'none'}}>
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <a href={item.href} className="footer__link" target="_blank" rel="noopener noreferrer" style={{color: '#ddd', textDecoration: 'none'}}>
+                        {item.label}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <div className="footer__bottom text--center" style={{marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid #444'}}>
+          <div className="footer__copyright" style={{color: '#aaa'}}>
+            Copyright © {new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook | Built with Docusaurus
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
