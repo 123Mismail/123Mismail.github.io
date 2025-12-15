@@ -99,7 +99,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Textbook',
+            title: 'Chapters',
             items: [
               {
                 label: 'Chapter 1: Foundations of Physical AI',
@@ -110,13 +110,18 @@ const config = {
                 to: '/chapters/c2-ros2-architecture',
               },
               {
-                label: 'Chapter 3: ROS 2 Actions and Services',
+                label: 'Chapter 3: ROS 2 Actions',
                 to: '/chapters/c3-ros2-actions',
               },
               {
                 label: 'Chapter 4: URDF Robot Description',
                 to: '/chapters/c4-urdf-robot-description',
               },
+            ],
+          },
+          {
+            title: 'Advanced Topics',
+            items: [
               {
                 label: 'Chapter 5: Gazebo Simulation',
                 to: '/chapters/c5-gazebo-simulation',
@@ -126,41 +131,38 @@ const config = {
                 to: '/chapters/c6-isaac-sim',
               },
               {
-                label: 'Chapter 7: Unity Simulation for Humanoid Robotics',
+                label: 'Chapter 7: Unity Simulation',
                 to: '/chapters/c7-unity-simulation',
               },
               {
-                label: 'Chapter 8: Advanced Simulation Techniques',
+                label: 'Chapter 8: Advanced Simulation',
                 to: '/chapters/c8-advanced-simulation',
-              },
-              {
-                label: 'Chapter 9: Real-Time Control Systems and Embedded Hardware',
-                to: '/chapters/c9-real-time-control',
-              },
-              {
-                label: 'Chapter 10: Real-Time Control Algorithms for Humanoid Robotics',
-                to: '/chapters/c10-real-time-algorithms',
-              },
-              {
-                label: 'Chapter 11: Sensor Fusion for Humanoid Robotics',
-                to: '/chapters/c11-sensor-fusion',
-              },
-              {
-                label: 'Chapter 12: Whole-Body Control for Humanoid Robotics',
-                to: '/chapters/c12-whole-body-control',
-              },
-              {
-                label: 'Chapter 13: ZMP Walking and Balance Control for Humanoid Robotics',
-                to: '/chapters/c13-zmp-walking',
-              },
-              {
-                label: 'Chapter 14: Humanoid Integration and Deployment',
-                to: '/chapters/c14-humanoid-integration',
               },
             ],
           },
           {
-            title: 'Resources',
+            title: 'Control & Integration',
+            items: [
+              {
+                label: 'Chapter 9: Real-Time Control',
+                to: '/chapters/c9-real-time-control',
+              },
+              {
+                label: 'Chapter 10: Control Algorithms',
+                to: '/chapters/c10-real-time-algorithms',
+              },
+              {
+                label: 'Chapter 11: Sensor Fusion',
+                to: '/chapters/c11-sensor-fusion',
+              },
+              {
+                label: 'Chapter 12-14: Advanced Topics',
+                to: '/chapters/c12-whole-body-control',
+              },
+            ],
+          },
+          {
+            title: 'Resources & Support',
             items: [
               {
                 label: 'ROS 2 Humble Docs',
@@ -174,10 +176,19 @@ const config = {
                 label: 'NVIDIA Isaac Sim',
                 href: 'https://docs.omniverse.nvidia.com/isaacsim/latest/',
               },
+              {
+                label: 'GitHub Repository',
+                href: 'https://github.com/123Mismail/physical-ai-humanoid-robotics',
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.`,
+        logo: {
+          alt: 'Physical AI Logo',
+          src: 'img/logo.svg',
+          href: '/',
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook | Built with Docusaurus`,
       },
       prism: {
         theme: require('prism-react-renderer').themes.github,
