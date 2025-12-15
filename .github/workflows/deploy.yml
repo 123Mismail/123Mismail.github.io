@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, master]  # Change if your main branch is different
+    branches: [master]  # Change if your main branch is different
   workflow_dispatch:
 
 jobs:
@@ -15,10 +15,15 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 18
-        cache: npm
+        cache: 'npm'
 
     - name: Install dependencies
-      run: npm ci
+      run: |
+        if [ -f package-lock.json ]; then
+          npm ci
+        else
+          npm install
+        fi
     - name: Build website
       run: npm run build
 
