@@ -60,8 +60,8 @@ const config = {
           path: 'chapters',
           routeBasePath: 'chapters',
           // Math support for LaTeX rendering
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
+          remarkPlugins: [[remarkMath, {}]],
+          rehypePlugins: [[rehypeKatex, {strict: false}]],
         },
         gtag: undefined,
         googleTagManager: undefined,
