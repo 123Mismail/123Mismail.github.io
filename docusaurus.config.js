@@ -63,8 +63,6 @@ const config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
-        theme: {
-        },
         gtag: undefined,
         googleTagManager: undefined,
         sitemap: undefined,
