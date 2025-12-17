@@ -1,4 +1,4 @@
-// @ts-check
+
 
 /** @type {import('@docusaurus/types').Config} */
 async function createConfig() {
