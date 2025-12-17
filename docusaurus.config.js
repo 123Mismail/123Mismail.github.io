@@ -16,8 +16,8 @@ async function createConfig() {
     organizationName: '123Mismail',
     projectName: 'physical-ai-humanoid-robotics',
 
-    // MOVED: These belong here at the root level
     onBrokenLinks: 'ignore',
+    // REPLACED: Using the modern root-level setting
     onBrokenMarkdownLinks: 'ignore', 
     
     trailingSlash: false,
@@ -67,53 +67,15 @@ async function createConfig() {
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
-        image: 'img/docusaurus-social-card.jpg',
         navbar: {
           title: 'Physical AI Textbook',
-          logo: {
-            alt: 'Physical AI Logo',
-            src: 'img/logo.svg',
-            href: '/',
-            target: '_self',
-          },
           items: [
-            {
-              type: 'docSidebar',
-              sidebarId: 'tutorialSidebar',
-              position: 'left',
-              label: 'Chapters',
-            },
-            {
-              type: 'localeDropdown',
-              position: 'right',
-            },
+            { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Chapters' },
           ],
         },
         footer: {
           style: 'dark',
-          links: [
-            {
-              title: 'Chapters',
-              items: [
-                { label: 'Chapter 1: Foundations', to: '/chapters/c1-foundations-physical-ai' },
-                { label: 'Chapter 2: ROS 2 Architecture', to: '/chapters/c2-ros2-architecture' },
-                { label: 'Chapter 3: ROS 2 Actions', to: '/chapters/c3-ros2-actions' },
-                { label: 'Chapter 4: URDF Robot Description', to: '/chapters/c4-urdf-robot-description' },
-              ],
-            },
-            {
-              title: 'Resources',
-              items: [
-                { label: 'GitHub', href: 'https://github.com/123Mismail/physical-ai-humanoid-robotics' },
-              ],
-            },
-          ],
           copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook`,
-        },
-        prism: {
-          theme: require('prism-react-renderer').themes.github,
-          darkTheme: require('prism-react-renderer').themes.dracula,
-          additionalLanguages: ['python', 'bash', 'yaml'],
         },
       }),
   };
