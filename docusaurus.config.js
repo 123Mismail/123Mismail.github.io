@@ -17,7 +17,7 @@ async function createConfig() {
     projectName: 'physical-ai-humanoid-robotics',
 
     onBrokenLinks: 'ignore',
-    // REPLACED: Using the modern root-level setting
+   
     onBrokenMarkdownLinks: 'ignore', 
     
     trailingSlash: false,
