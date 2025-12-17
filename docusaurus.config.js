@@ -2,7 +2,6 @@
 
 /** @type {import('@docusaurus/types').Config} */
 async function createConfig() {
-  // We use dynamic imports to handle ESM-only plugins in a CJS environment
   const remarkMath = (await import('remark-math')).default;
   const rehypeKatex = (await import('rehype-katex')).default;
 
@@ -17,12 +16,14 @@ async function createConfig() {
     organizationName: '123Mismail',
     projectName: 'physical-ai-humanoid-robotics',
 
+    // MOVED: These belong here at the root level
     onBrokenLinks: 'ignore',
+    onBrokenMarkdownLinks: 'ignore', 
+    
     trailingSlash: false,
     
     markdown: {
       mermaid: true,
-      onBrokenMarkdownLinks: 'ignore',
       mdx1Compat: {
         comments: true,
         admonitions: true,
@@ -48,7 +49,6 @@ async function createConfig() {
             rehypePlugins: [[rehypeKatex, { strict: false }]],
           },
           theme: {
-            // UPDATED: Pointing to your actual file name
             customCss: require.resolve('./src/css/custom-rtl.css'),
           },
         }),
@@ -102,14 +102,7 @@ async function createConfig() {
               ],
             },
             {
-              title: 'Advanced Topics',
-              items: [
-                { label: 'Chapter 5: Gazebo Simulation', to: '/chapters/c5-gazebo-simulation' },
-                { label: 'Chapter 6: NVIDIA Isaac Sim', to: '/chapters/c6-isaac-sim' },
-              ],
-            },
-            {
-              title: 'Community',
+              title: 'Resources',
               items: [
                 { label: 'GitHub', href: 'https://github.com/123Mismail/physical-ai-humanoid-robotics' },
               ],
