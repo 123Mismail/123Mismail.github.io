@@ -11,7 +11,7 @@ async function createConfig() {
     favicon: 'img/favicon.ico',
 
     url: 'https://123Mismail.github.io',
-    baseUrl: '/physical-ai-humanoid-robotics/',
+    baseUrl: '/',
 
     organizationName: '123Mismail',
     projectName: 'physical-ai-humanoid-robotics',
