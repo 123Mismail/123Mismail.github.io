@@ -19,9 +19,24 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm ci
+      run: |
+        npm ci
+        echo "Dependencies installed successfully"
+
+    - name: Check Node and NPM versions
+      run: |
+        node --version
+        npm --version
+
     - name: Build website
-      run: npm run build
+      run: |
+        npm run build
+        echo "Build completed successfully"
+
+    - name: List build directory contents
+      run: |
+        ls -la build/
+        ls -la build/en/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
