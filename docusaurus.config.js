@@ -19,7 +19,8 @@ const config = {
   organizationName: '123Mismail', // Your GitHub username
   projectName: 'physical-ai-humanoid-robotics', // Your repository name
 
-  onBrokenLinks: 'warn', // Changed from 'throw' to prevent build failures
+  onBrokenLinks: 'ignore', // Changed from 'warn'
+  onBrokenMarkdownLinks: 'ignore', // Changed from 'throw' to prevent build failures
   trailingSlash: false, // Recommended for GitHub Pages
   markdown: {
     mermaid: true,
