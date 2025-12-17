@@ -34,20 +34,11 @@ const config = {
   // metadata like html lang.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ur', 'es', 'fr', 'de'],
+    locales: ['en'], // Temporarily limit to English only for GitHub Pages deployment
+    // locales: ['en', 'ur', 'es', 'fr', 'de'], // Full set when build is stable
     localeConfigs: {
-      ur: {
-        direction: 'rtl',
-        label: 'Urdu',
-      },
-      es: {
-        label: 'Español',
-      },
-      fr: {
-        label: 'Français',
-      },
-      de: {
-        label: 'Deutsch',
+      en: {
+        label: 'English',
       },
     },
   },
