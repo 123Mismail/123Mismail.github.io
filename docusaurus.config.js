@@ -20,11 +20,14 @@ const config = {
   projectName: 'physical-ai-humanoid-robotics', // Your repository name
 
   onBrokenLinks: 'warn', // Changed from 'throw' to prevent build failures
-  onBrokenMarkdownLinks: 'warn',
   trailingSlash: false, // Recommended for GitHub Pages
-
   markdown: {
     mermaid: true,
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
   },
 
   // Even if you don't use internalization, you can use this field to set useful

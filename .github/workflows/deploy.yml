@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]  # Change if your main branch is different
+    branches: [master,main]  # Change if your main branch is different
   workflow_dispatch:
 
 jobs:
