@@ -1,6 +1,6 @@
 // @ts-check
 
-/** * @type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/types').Config} */
 async function createConfig() {
   // We use dynamic imports to handle ESM-only plugins in a CJS environment
   const remarkMath = (await import('remark-math')).default;
@@ -44,12 +44,12 @@ async function createConfig() {
             sidebarPath: require.resolve('./sidebars.js'),
             path: 'chapters',
             routeBasePath: 'chapters',
-            // Corrected: Passing the imported functions directly
             remarkPlugins: [remarkMath],
             rehypePlugins: [[rehypeKatex, { strict: false }]],
           },
           theme: {
-            customCss: require.resolve('./src/css/custom.css'),
+            // UPDATED: Pointing to your actual file name
+            customCss: require.resolve('./src/css/custom-rtl.css'),
           },
         }),
       ],
@@ -97,6 +97,15 @@ async function createConfig() {
               items: [
                 { label: 'Chapter 1: Foundations', to: '/chapters/c1-foundations-physical-ai' },
                 { label: 'Chapter 2: ROS 2 Architecture', to: '/chapters/c2-ros2-architecture' },
+                { label: 'Chapter 3: ROS 2 Actions', to: '/chapters/c3-ros2-actions' },
+                { label: 'Chapter 4: URDF Robot Description', to: '/chapters/c4-urdf-robot-description' },
+              ],
+            },
+            {
+              title: 'Advanced Topics',
+              items: [
+                { label: 'Chapter 5: Gazebo Simulation', to: '/chapters/c5-gazebo-simulation' },
+                { label: 'Chapter 6: NVIDIA Isaac Sim', to: '/chapters/c6-isaac-sim' },
               ],
             },
             {
